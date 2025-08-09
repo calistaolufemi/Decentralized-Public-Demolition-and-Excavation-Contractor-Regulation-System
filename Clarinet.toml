@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Public-Demolition-and-Excavation-Contractor-Regulation-System'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.debris-disposal]
+path = 'contracts/debris-disposal.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.excavation-safety]
+path = 'contracts/excavation-safety.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
